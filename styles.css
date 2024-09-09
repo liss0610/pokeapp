@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    flex-grow: 1;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff6347;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ff6347;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3f31;
+}
+
+button i {
+    font-size: 18px;
+}
+
+#pokeCard {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 650px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 30px; /* Incrementar el padding para más espacio interno */
+}
+
+#pokeCard img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    margin-right: 30px; /* Separar más la imagen del texto */
+}
+
+#pokeCard img:hover {
+    transform: scale(1.1);
+}
+
+.card-details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.card-details h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px; /* Separar más el título del resto del texto */
+}
+
+.card-details p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 8px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#pokeType {
+    font-weight: bold;
+    color: #ff6347;
+}

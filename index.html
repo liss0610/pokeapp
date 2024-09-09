@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Aquí puedes incluir una librería de iconos como Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Pokémon Info</h1>
+    <form id="pokeForm">
+        <label for="pokeInput">Introduce el nombre o ID del Pokémon:</label>
+        <input type="text" id="pokeInput" placeholder="Ej: Pikachu o 25">
+        <button type="submit">
+            <i class="fas fa-search"></i> Buscar
+        </button>
+    </form>
+
+    <div id="pokeCard" class="hidden">
+        <img id="pokeImage" alt="">
+        <div class="card-details">
+            <h2 id="pokeName"></h2>
+            <p><strong>Altura:</strong> <span id="pokeHeight"></span> dm</p>
+            <p><strong>Peso:</strong> <span id="pokeWeight"></span> hg</p>
+            <p><strong>Tipo:</strong> <span id="pokeType"></span></p>
+            <p id="pokeGen"><strong>Generación:</strong> </p>
+            <p id="pokeAtk"><strong>Ataque:</strong> </p>
+            <p id="pokeDef"><strong>Defensa:</strong> </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
